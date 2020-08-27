@@ -7,7 +7,7 @@ A [Singer](https://www.singer.io/) tap for Canvas' [LMS API](https://canvas.inst
 Per Singer specifications, provide configuration via json file:
 
 ```bash
-tap-canvas --config ./config.json
+tap-canvas --config ./config.json [--catalog ./catalog.json]
 ```
 
 ### Sample `config.json`
@@ -17,6 +17,28 @@ tap-canvas --config ./config.json
     "host": "example.instructure.com",
     "token": "1234~xzwD4...",
     "account": 1
+}
+```
+
+### Sample `catalog.json`
+
+By providing at least the data in this `catalog.json`, you can activate embedding logins within users:
+
+```bash
+{
+    "streams": [
+        {
+            "stream": "users",
+            "metadata": [
+                {
+                    "breadcrumb": ["properties", "logins"],
+                    "metadata": {
+                        "selected": true
+                    }
+                }
+            ]
+        }
+    ]
 }
 ```
 

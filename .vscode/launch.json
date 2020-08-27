@@ -11,11 +11,12 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceRoot}/bin/tap-canvas.js",
+            "cwd": "${workspaceFolder:friends-select}",
+            "program": "${workspaceFolder}/bin/tap-canvas.js",
             "args": [
-                "--config=${workspaceRoot}/.scratch/config.json",
+                "--config=${workspaceFolder:friends-select}/.scratch/canvas/config.json",
                 // "--state=${workspaceRoot}/.scratch/state.json",
-                // "--catalog=${workspaceRoot}/.scratch/catalog.json"
+                "--catalog=${workspaceFolder:friends-select}/.scratch/canvas/catalog.json",
             ]
         }
     ]
