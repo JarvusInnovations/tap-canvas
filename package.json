@@ -1,0 +1,20 @@
+{
+    "name": "tap-canvas",
+    "version": "1.0.0",
+    "author": "Jarvus Innovations <hello@jarv.us>",
+    "description": "A Singer tap for Canvas' LMS API",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/JarvusInnovations/tap-canvas"
+    },
+    "bin": {
+        "tap-canvas": "bin/tap-canvas.js"
+    },
+    "dependencies": {
+        "got": "^11.5.2",
+        "yargs": "^15.4.1"
+    },
+    "devDependencies": {
+        "standard": "*"
+    }
+}
