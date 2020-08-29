@@ -11,12 +11,17 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
+            "console": "integratedTerminal",
             "cwd": "${workspaceFolder:friends-select}",
             "program": "${workspaceFolder}/bin/tap-canvas.js",
             "args": [
                 "--config=${workspaceFolder:friends-select}/.scratch/canvas/config.json",
                 // "--state=${workspaceRoot}/.scratch/state.json",
                 "--catalog=${workspaceFolder:friends-select}/.scratch/canvas/catalog.json",
+                "|",
+                "git", "sheet", "singer-target",
+                "--delete-missing",
+                "--commit-to=gitsheets/canvas"
             ]
         }
     ]
