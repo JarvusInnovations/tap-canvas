@@ -19,7 +19,7 @@
                 // "--state=${workspaceRoot}/.scratch/state.json",
                 "--catalog=${workspaceFolder:friends-select}/.scratch/canvas/catalog.json",
                 "|",
-                "git", "sheet", "singer-target",
+                "git", "sheetx", "singer-target",
                 "--delete-missing",
                 "--commit-to=gitsheets/canvas"
             ]
