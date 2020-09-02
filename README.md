@@ -14,7 +14,7 @@ tap-canvas --config ./config.json [--catalog ./catalog.json]
 
 ```json
 {
-    "host": "example.instructure.com",
+    "host": "https://example.instructure.com",
     "token": "1234~xzwD4...",
     "account": 1
 }
